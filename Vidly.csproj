@@ -209,6 +209,34 @@
     <Compile Include="Migrations\202108292124549_PopulateMoreMembershipTypeNames.Designer.cs">
       <DependentUpon>202108292124549_PopulateMoreMembershipTypeNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108292129171_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\202108292129171_AddBirthdateToCustomer.Designer.cs">
+      <DependentUpon>202108292129171_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108292133135_DefineTheLengthOnMembershipTypeName.cs" />
+    <Compile Include="Migrations\202108292133135_DefineTheLengthOnMembershipTypeName.Designer.cs">
+      <DependentUpon>202108292133135_DefineTheLengthOnMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108292136167_PopulateCustomerBirthdate.cs" />
+    <Compile Include="Migrations\202108292136167_PopulateCustomerBirthdate.Designer.cs">
+      <DependentUpon>202108292136167_PopulateCustomerBirthdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108292148043_MadeCustomerBirthdateNullable.cs" />
+    <Compile Include="Migrations\202108292148043_MadeCustomerBirthdateNullable.Designer.cs">
+      <DependentUpon>202108292148043_MadeCustomerBirthdateNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108292211008_RemoveCustomerBirthdate.cs" />
+    <Compile Include="Migrations\202108292211008_RemoveCustomerBirthdate.Designer.cs">
+      <DependentUpon>202108292211008_RemoveCustomerBirthdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108292213310_AddCustomerBirthdate.cs" />
+    <Compile Include="Migrations\202108292213310_AddCustomerBirthdate.Designer.cs">
+      <DependentUpon>202108292213310_AddCustomerBirthdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108292217534_PopulateCustomerBirthdate1.cs" />
+    <Compile Include="Migrations\202108292217534_PopulateCustomerBirthdate1.Designer.cs">
+      <DependentUpon>202108292217534_PopulateCustomerBirthdate1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -427,6 +455,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108292124549_PopulateMoreMembershipTypeNames.resx">
       <DependentUpon>202108292124549_PopulateMoreMembershipTypeNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108292129171_AddBirthdateToCustomer.resx">
+      <DependentUpon>202108292129171_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108292133135_DefineTheLengthOnMembershipTypeName.resx">
+      <DependentUpon>202108292133135_DefineTheLengthOnMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108292136167_PopulateCustomerBirthdate.resx">
+      <DependentUpon>202108292136167_PopulateCustomerBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108292148043_MadeCustomerBirthdateNullable.resx">
+      <DependentUpon>202108292148043_MadeCustomerBirthdateNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108292211008_RemoveCustomerBirthdate.resx">
+      <DependentUpon>202108292211008_RemoveCustomerBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108292213310_AddCustomerBirthdate.resx">
+      <DependentUpon>202108292213310_AddCustomerBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108292217534_PopulateCustomerBirthdate1.resx">
+      <DependentUpon>202108292217534_PopulateCustomerBirthdate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
