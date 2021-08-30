@@ -14,6 +14,9 @@ namespace Vidly.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         GenreId = c.Int(nullable: false),
+                        ReleaseDate = c.DateTime(nullable: false),
+                        DateAdded = c.DateTime(nullable: false),
+                        NumberInStock = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Genres", t => t.GenreId, cascadeDelete: true)
