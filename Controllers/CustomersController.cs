@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
@@ -17,11 +18,18 @@ namespace Vidly.Controllers
         {
             _context = new ApplicationDbContext();
         }
+
         protected override void Dispose(bool disposing)
         {
             _context.Dispose();
         }
-        public ActionResult Index()
+
+        public ActionResult New()
+        {
+            return View();
+        }
+
+        public ViewResult Index()
         {
             var customers = _context.Customers.Include(c => c.MembershipType).ToList();
             return View(customers);
