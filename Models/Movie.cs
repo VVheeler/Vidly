@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.AccessControl;
 using System.Web;
+using System.Web.ModelBinding;
 
 namespace Vidly.Models
 {
@@ -24,6 +25,7 @@ namespace Vidly.Models
         public DateTime DateAdded { get; set; }
         [Required]
         [DisplayName("Number in Stock")]
+        [Range(0, 20, ErrorMessage = "The number in stock must be between 0-20.")]
         public int NumberInStock { get; set; }
     }
 }
