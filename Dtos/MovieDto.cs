@@ -16,9 +16,7 @@ namespace Vidly.Dtos
         [Required]
         public int GenreId { get; set; }
         public DateTime DateAdded { get; set; }
-        [Required]
         public DateTime ReleaseDate { get; set; }
-        [Required]
         [Range(0, 20)]
         public int NumberInStock { get; set; }
     }
