@@ -24,6 +24,11 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult New()
         {
             var genres = _context.Genres.ToList();
@@ -54,13 +59,6 @@ namespace Vidly.Controllers
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Movies");
-        }
-
-        public ActionResult Index()
-        {
-            var movies = _context.Movies.Include(m => m.Genre).ToList().OrderBy(m => m.Name);
-
-            return View(movies);
         }
 
         public ActionResult Edit(int id)
